@@ -3,9 +3,24 @@ import React, { useState, useEffect } from "react";
 import "./App.css";
 
 function App() {
-  const [countries, setCountries] = useState([
-    "India", "USA", "FRANCE","China"
-  ]);
+  const [countries, setCountries] = useState([]);
+
+  useEffect(() => {
+    const getCountriesData = async () => {
+      await fetch("https://disease.sh/v3/covid-19/countries")
+        .then((response) => response.json())
+        .then((data) => {
+          const countries = data.map((country) => ({
+            name: country.country, // full country name
+            value: country.countryInfo.iso2, //2letter country name
+          }));
+
+          setCountries(countries);
+        });
+    };
+
+    getCountriesData();
+  }, []);
 
   return (
     <div className="app">
@@ -13,11 +28,9 @@ function App() {
         <h1>Covid-19 tracker</h1>
         <FormControl className="app__dropdown">
           <Select variant="outlined" value="abc">
-            {
-              countries.map(country =>(
-              <MenuItem value={country}>{country}</MenuItem>
-              ))
-            }
+            {countries.map((country) => (
+              <MenuItem value={country.value}>{country.name}</MenuItem>
+            ))}
 
             {/* <MenuItem vlaue="Worldwide">Worldwide</MenuItem>
             <MenuItem value="worldwide">option2</MenuItem>
