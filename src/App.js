@@ -10,7 +10,8 @@ import InfoBox from "./InfoBox";
 import Map from "./Map";
 import Table from "./Table";
 import "./App.css";
-import { sortData } from './util';
+import { sortData } from "./util";
+import LineGraph from "./LineGraph";
 
 function App() {
   const [countries, setCountries] = useState([]);
@@ -36,7 +37,7 @@ function App() {
             value: country.countryInfo.iso2, //2letter country name
           }));
 
-          const sortedData=sortData(data);
+          const sortedData = sortData(data);
           setTableData(sortedData);
           setCountries(countries);
         });
@@ -61,7 +62,7 @@ function App() {
       });
   };
 
-  console.log("Countryinfo>>>", countryInfo);
+  // console.log("Countryinfo>>>", countryInfo);
   return (
     <div className="app">
       <div className="app__left">
@@ -106,11 +107,9 @@ function App() {
         <Card className="app__right">
           <CardContent>
             <h3>Live cases by Country</h3>
-
             <Table countries={tableData}></Table>
-            {/* Graph */}
-
             <h3>Worldwide new Cases</h3>
+            <LineGraph />
           </CardContent>
         </Card>
       </div>
