@@ -19,6 +19,7 @@ function App() {
   const [country, setCountry] = useState("worldwide");
   const [countryInfo, setCountryInfo] = useState({});
   const [tableData, setTableData] = useState([]);
+  const [mapCountries, setMapCountries] = useState([]);
   // const [casesType, setCasesType] = useState("cases");
   const [mapCenter, setMapCenter] = useState({ lat: 34.80746, lng: -40.4796 });
   const [mapZoom, setMapZoom] = useState(3);
@@ -43,6 +44,7 @@ function App() {
 
           const sortedData = sortData(data);
           setTableData(sortedData);
+          setMapCountries(data);
           setCountries(countries);
         });
     };
@@ -123,7 +125,7 @@ function App() {
           />
         </div>
 
-        <Map center={mapCenter} zoom={mapZoom}></Map>
+        <Map countries={mapCountries} center={mapCenter} zoom={mapZoom}></Map>
       </div>
 
       <div>
