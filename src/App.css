@@ -9,7 +9,8 @@ body {
 .app {
   display: flex;
   justify-content: space-evenly;
-  background-color: #f5f6fa;
+  /* background-color: #f5f6fa; */
+  background-color: #acf5e89c;
   padding: 20px;
 }
 
