@@ -3,6 +3,12 @@ This is a website for tracking worldwide covid-19 cases. It is made with React.
 
 
 
+<br/><br/>
+
+![SitePreview](https://github.com/mriyank/covid-19-tracker/blob/master/assets/site-preview.png) 
+
+<br/><br/>
+<br/><br/>
 
 
 
