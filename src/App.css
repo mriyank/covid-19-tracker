@@ -11,11 +11,13 @@ body {
   justify-content: space-evenly;
   /* background-color: #f5f6fa; */
   background-color: #acf5e89c;
+  /* background-color: #519cec; */
+  /* background: linear-gradient(180deg, #6dc2c5, #1295ed); */
   padding: 20px;
 }
 
 .app__dropdown {
-  background-color: white;
+  background-color: rgb(235, 243, 242);
 }
 
 .app__header {
@@ -42,11 +44,7 @@ body {
 .app__right {
   display: flex;
   flex-direction: column;
-}
-.app__right .MuiCardContent-root {
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  background: linear-gradient(180deg, #80eacf, #87baec);
 }
 
 .app__information > h3 {

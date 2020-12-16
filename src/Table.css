@@ -1,23 +1,29 @@
 .table {
   margin-top: 20px;
-  overflow: scroll;
+  overflow-y: scroll;
+  /* overflow-y: auto; */
+  /* padding-right: 20px; */
   color: #6a5d5d;
-  /* background-color: white; */
   background-color: #eeffff;
-  height: 400px;
+  height: 440px;
+  border-radius: 5px;
+  scrollbar-width: none; /* Firefox */
 }
 
 .table tr {
   display: flex;
   justify-content: space-between;
 }
+::-webkit-scrollbar {
+  display: none !important;
+  /* width: 0px; */
+}
 
 .table td {
   padding: 0.5rem;
-  border: none;
+  /* border: none; */
 }
 
 .table tr:nth-of-type(odd) {
-  /* background-color: #f3f2f8; */
   background-color: #c3fdff;
 }
