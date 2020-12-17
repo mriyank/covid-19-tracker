@@ -42,8 +42,9 @@
 .info-flag {
   height: 80px;
   width: 100%;
+  display: inline-block;
   background-size: cover;
-  border-radius: 8px;
+  border-radius: 4px;
 }
 
 .info-confirmed,

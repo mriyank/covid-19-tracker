@@ -60,6 +60,7 @@ body {
 
 .app__graphTitle {
   flex-grow: 10px;
+  text-transform: capitalize;
 }
 
 .app__information > h3:last-of-type {

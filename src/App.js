@@ -52,7 +52,7 @@ const App = () => {
     getCountriesData();
   }, []);
 
-  console.log(casesType);
+  // console.log(casesType);
 
   const onCountryChange = async (e) => {
     const countryCode = e.target.value;
@@ -124,7 +124,7 @@ const App = () => {
       <Card className="app__right">
         <CardContent>
           <div className="app__information">
-            <h3 className="app__graphTitle">Worldwide new {casesType}</h3>
+            <h3 className="app__graphTitle">worldwide new {casesType}</h3>
             <LineGraph className="app__graph" casesType={casesType} />
             <h3>Live Cases by Country</h3>
             <Table countries={tableData} />
