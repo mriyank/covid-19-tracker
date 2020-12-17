@@ -1,6 +1,7 @@
 .infoBox {
   flex: 1;
   cursor: pointer;
+  background: linear-gradient(180deg, #ffffff, #e5defa);
 }
 
 .infoBox:not(:last-child) {
@@ -16,12 +17,12 @@
 }
 
 .infoBox__cases--green {
-  color: lightgreen !important;
+  color: rgb(29, 211, 29) !important;
 }
 
 .infoBox__cases {
   color: #cc1034;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 1.75rem;
   margin-bottom: 0.5rem;
 }
@@ -31,4 +32,17 @@
   font-weight: 700 !important;
   font-size: 0.8rem !important;
   margin-top: 15px !important;
+}
+
+@media (max-width: 432px) {
+  .infoBox__cases {
+    font-size: 1rem;
+  }
+
+  .MuiTypography-body1 {
+    font-size: 0.7rem !important;
+  }
+  .MuiSelect-root {
+    font-size: 0.7rem !important;
+  }
 }

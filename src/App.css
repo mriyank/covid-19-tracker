@@ -3,16 +3,16 @@
 }
 
 body {
-  background-color: #f5f6fa;
+  background-color: #97f0e0c4;
+  height: auto;
+  width: auto;
+  padding: 20px;
 }
 
 .app {
   display: flex;
   justify-content: space-evenly;
-  /* background-color: #f5f6fa; */
-  background-color: #acf5e89c;
-  /* background-color: #519cec; */
-  /* background: linear-gradient(180deg, #6dc2c5, #1295ed); */
+
   padding: 20px;
 }
 
