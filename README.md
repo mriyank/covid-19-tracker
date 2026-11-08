@@ -4,6 +4,7 @@ This is a website for tracking worldwide covid-19 cases using [Reactjs](https://
 
 
 
+
 ![SitePreview](https://github.com/mriyank/covid-19-tracker/blob/master/assets/site-preview.png) 
 
 <br/><br/>
